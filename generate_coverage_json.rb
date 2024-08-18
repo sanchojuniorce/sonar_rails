@@ -1,45 +1,50 @@
 require 'json'
+require 'pry'
+require 'pry-byebug'
 
 # Carregar o JSON gerado pelo SimpleCov
-input_file = 'coverage/coverage.json'
+input_file = 'coverage/.resultset.json'
+#input_file = 'coverage/coverage.json'
 output_file = 'coverage/coverage_formatted.json'
 
 # Ler o arquivo JSON
 coverage_data = JSON.parse(File.read(input_file))
 
+simplecov_version = coverage_data["meta"]["simplecov_version"] rescue "0.22.0"
+#binding.pry
 # Inicializar a estrutura formatada
 formatted_data = {
   "meta" => {
-    "simplecov_version" => "0.22.0"#coverage_data["version"]
+    "simplecov_version" => simplecov_version
   },
-  "coverage" => {},
-  "groups" => {}
+  "coverage" => coverage_data["coverage"],
+  "groups" => coverage_data["groups"]
 }
 
-# Verificar se "results" está presente e é um array
-if coverage_data["results"].is_a?(Array)
-  coverage_data["results"].each do |file|
-    formatted_data["coverage"][file["filename"]] = {
-      "lines" => file["coverage"],
-      "branches" => [] # Adaptar conforme necessário
-    }
-  end
-else
-  puts "Formato inesperado no arquivo de cobertura: 'results' não encontrado ou não é um array."
-end
+# # Verificar se "results" está presente e é um array
+# if coverage_data["results"].is_a?(Array)
+#   coverage_data["results"].each do |file|
+#     formatted_data["coverage"][file["filename"]] = {
+#       "lines" => file["coverage"],
+#       "branches" => [] # Adaptar conforme necessário
+#     }
+#   end
+# else
+#   puts "Formato inesperado no arquivo de cobertura: 'results' não encontrado ou não é um array."
+# end
 
-# Adicionar dados agregados para grupos
-if coverage_data["groups"].is_a?(Hash)
-  coverage_data["groups"].each do |group_name, group_data|
-    formatted_data["groups"][group_name] = {
-      "lines" => {
-        "covered_percent" => group_data["covered_percent"]
-      }
-    }
-  end
-else
-  puts "Formato inesperado para grupos de cobertura."
-end
+# # Adicionar dados agregados para grupos
+# if coverage_data["groups"].is_a?(Hash)
+#   coverage_data["groups"].each do |group_name, group_data|
+#     formatted_data["groups"][group_name] = {
+#       "lines" => {
+#         "covered_percent" => group_data["covered_percent"]
+#       }
+#     }
+#   end
+# else
+#   puts "Formato inesperado para grupos de cobertura."
+# end
 
 # Salvar o arquivo JSON formatado
 File.open(output_file, 'w') do |f|
