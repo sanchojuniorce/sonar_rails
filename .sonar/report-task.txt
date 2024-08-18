@@ -2,5 +2,5 @@ projectKey=MyApp
 serverUrl=http://sonarqube:9000
 serverVersion=10.6.0.92116
 dashboardUrl=http://sonarqube:9000/dashboard?id=MyApp
-ceTaskId=534b4a84-64a9-47c1-850c-80d118db39a0
-ceTaskUrl=http://sonarqube:9000/api/ce/task?id=534b4a84-64a9-47c1-850c-80d118db39a0
+ceTaskId=5107d4d2-38ae-498f-ab81-5ef7dcbc2d88
+ceTaskUrl=http://sonarqube:9000/api/ce/task?id=5107d4d2-38ae-498f-ab81-5ef7dcbc2d88
