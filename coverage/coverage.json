@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "simplecov_version": "0.22.0"
+  },
+  "coverage": {
+    "/myapp/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ],
+        "branches": [
+
+        ]
+    },
+    "/myapp/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": [
+
+        ]
+      },
+      "/myapp/app/models/post.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": [
+
+        ]
+      },
+      "/myapp/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ],
+        "branches": [
+
+        ]
+      }
+    },
+  "groups": {
+    "Controllers": {
+      "lines": {
+        "covered_percent": 31.599065619027396
+      }
+    },
+    "Channels": {
+      "lines": {
+        "covered_percent": 100.0
+      }
+    },
+    "Models": {
+      "lines": {
+        "covered_percent": 51.793062904174015
+      }
+    },
+    "Mailers": {
+      "lines": {
+        "covered_percent": 34.13461538461539
+      }
+    },
+    "Helpers": {
+      "lines": {
+        "covered_percent": 28.093645484949832
+      }
+    },
+    "Jobs": {
+      "lines": {
+        "covered_percent": 59.880239520958085
+      }
+    },
+    "Libraries": {
+      "lines": {
+        "covered_percent": 32.13483146067416
+      }
+    },
+    "Ungrouped": {
+      "lines": {
+        "covered_percent": 19.322033898305083
+      }
+    }
+  }
+}

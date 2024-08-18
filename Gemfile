@@ -51,4 +51,6 @@ end
 
 group :test do
   gem 'simplecov', require: false
+  gem 'simplecov_json_formatter'
+  gem 'rspec_junit_formatter'
 end
