@@ -252,6 +252,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   simplecov
+  simplecov_json_formatter
   sqlite3 (~> 1.4)
   tzinfo-data
 

@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "simplecov_version": null
+  },
+ "coverage": {
+    "/myapp/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ],
+        "branches": [
+
+        ]
+    },
+    "/myapp/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": [
+
+        ]
+      },
+      "/myapp/app/models/post.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": [
+
+        ]
+      },
+      "/myapp/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ],
+        "branches": [
+
+        ]
+      }
+    },
+  "groups": {
+    "Controllers": {
+      "lines": {
+        "covered_percent": null
+      }
+    },
+    "Channels": {
+      "lines": {
+        "covered_percent": null
+      }
+    },
+    "Models": {
+      "lines": {
+        "covered_percent": null
+      }
+    },
+    "Mailers": {
+      "lines": {
+        "covered_percent": null
+      }
+    },
+    "Helpers": {
+      "lines": {
+        "covered_percent": null
+      }
+    },
+    "Jobs": {
+      "lines": {
+        "covered_percent": null
+      }
+    },
+    "Libraries": {
+      "lines": {
+        "covered_percent": null
+      }
+    },
+    "Ungrouped": {
+      "lines": {
+        "covered_percent": null
+      }
+    }
+  }
+}
