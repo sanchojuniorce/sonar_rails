@@ -3,6 +3,106 @@
     "simplecov_version": "0.22.0"
   },
   "coverage": {
+    "/myapp/app/controllers/posts_controller.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ]
+    },
+    "/myapp/app/controllers/application_controller.rb": {
+      "lines": [
+        1,
+        null
+      ]
+    },
+    "/myapp/app/models/post.rb": {
+      "lines": [
+        1,
+        null
+      ]
+    },
+    "/myapp/app/models/application_record.rb": {
+      "lines": [
+        1,
+        1,
+        null
+      ]
+    }
   },
-  "groups": null
+  "groups": {
+    "Controllers": {
+      "lines": {
+        "covered_percent": 48.17
+      }
+    },
+    "Models": {
+      "lines": {
+        "covered_percent": 58.34
+      }
+    },
+    "Mailers": {
+      "lines": {
+        "covered_percent": 0
+      }
+    },
+    "Helpers": {
+      "lines": {
+        "covered_percent": 0
+      }
+    },
+    "Jobs": {
+      "lines": {
+        "covered_percent": 0
+      }
+    },
+    "Libraries": {
+      "lines": {
+        "covered_percent": 0
+      }
+    },
+    "Ungrouped": {
+      "lines": {
+        "covered_percent": 0
+      }
+    }
+  }
 }
